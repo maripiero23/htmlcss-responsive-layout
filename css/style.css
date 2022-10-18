@@ -15,69 +15,60 @@
 
 .container{
     width: 100%;
-    margin: auto;
-}
-
-.logo-menu-container{
-    display: flex;
-    justify-content: space-between;
+    margin:0 auto;
+    padding: 0 1rem;
 }
 
 .row{
-    min-height: 100%;
-    width: 100%;
-    background-color: var(--primary-color);
-    border-radius: 1rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.padd-container{
-    padd
+.row > *{ /*tutti i figli della row*/
+    flex-grow: 1;
 }
 
-.col{
-    width: 100%;
-    display: flex;
-    padding: 1rem;
+/*COLONNE*/
+
+/*di base le mie colonne sono il 100% perchè parto dal mobile*/
+.col-100{ 
+    flex-basis: 100%;
 }
 
-
-
-.header{
-    padding-bottom: 1rem ;
-}
-
-.container-card{
-    background-color: var(---color-light);
+.col-1_2{
+    flex-basis: 50%;
 }
 
 
-section{
-    padding: .5rem;
+.col-1_3{
+    flex-basis: calc(100% / 3);
 }
 
 
-
-.violet{
-    padding: .5rem;
-    background-color: var(--secondary-color);
-}
-
-.testimonial{
-    padding: 1rem;
-    text-align: centre;
+.col-2_3{
+    flex-basis: calc((100% / 3) * 2);
 }
 
 
+.col-1_4{
+    flex-basis: 25%;
+}
 
+.col-2_4{
+    flex-basis: calc((100% / 4) * 2);
+}
 
+.col-3_4{
+    flex-basis: calc((100% / 4) * 3);
+}
 
+/*CARD*/
 
-
-
-
-
-
+.card{
+    border-radius: 20px;
+    background-color: var(--primary-color-light);
+    min-height: 200px;
+}
 
 
 
